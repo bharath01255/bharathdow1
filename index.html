@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Image</title>
+    <script>
+        window.onload = function() {
+            // Change the URL to the image you want to download
+            var imageUrl = "https://example.com/image.jpg";
+            
+            // Create a temporary link element
+            var downloadLink = document.createElement("a");
+            
+            // Set the link's href attribute to the image URL
+            downloadLink.href = imageUrl;
+            
+            // Set the link's download attribute to force download the image
+            downloadLink.download = "image.jpg";
+            
+            // Trigger the click event on the link to start the download
+            downloadLink.click();
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting to download image...</p>
+</body>
+</html>
