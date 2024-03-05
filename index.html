@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download File</title>
-    <script>
-        window.onload = function() {
-            // Change the URL to the file you want to download
-            var fileUrl = "https://example.com/file.zip";
-            
-            // Create a temporary link element
-            var downloadLink = document.createElement("a");
-            
-            // Set the link's href attribute to the file URL
-            downloadLink.href = fileUrl;
-            
-            // Set the link's download attribute to force download the file
-            downloadLink.download = "file.zip";
-            
-            // Trigger the click event on the link to start the download
-            downloadLink.click();
-        };
-    </script>
+    <title>Download Files</title>
 </head>
 <body>
-    <p>Redirecting to download file...</p>
+    <header>
+        <h1>Download Files</h1>
+    </header>
+
+    <section>
+        <div>
+            <h2>Available Downloads:</h2>
+            <ul>
+                <li><a href="example_file_1.pdf" download>Example File 1 (PDF)</a></li>
+                <li><a href="example_file_2.zip" download>Example File 2 (ZIP)</a></li>
+                <!-- Add more files as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
